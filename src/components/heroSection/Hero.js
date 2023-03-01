@@ -33,7 +33,7 @@ function Hero() {
           <h3 className="text-xs font-[600] mt-5">Offer ends April 30, 2023</h3>
         </div>
       </div>
-      <img src="" alt="company car" />
+      {/* <img src="" alt="company car" /> */}
     </section>
   );
 }
