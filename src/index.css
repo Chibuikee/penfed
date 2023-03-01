@@ -30,3 +30,7 @@ body {
   grid-template-rows: repeat(3, 50px);
   grid-template-columns: repeat(2, 1fr);
 }
+.php::placeholder {
+  padding-left: 16px;
+  font-size: 16px;
+}
