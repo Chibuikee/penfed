@@ -7,7 +7,6 @@ import {
   FaInstagramSquare,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import hero_deck_mobile_app from "../assets/images/hero-deck-mobile-app-400x400.jpeg";
 import mobile_icon_appstorebadge from "../assets/images/mobile_icon_appstorebadge.svg";
 import mobile_icon_googleplaybadge from "../assets/images/mobile_icon_googleplaybadge.svg";
 function Footer() {
@@ -50,35 +49,6 @@ function Footer() {
   return (
     <>
       <section className="bg-[#212529] box-border">
-        <div className="px-4 mx-auto sm:max-w-[600px] md:max-w-[760px] lg:max-w-[1010px] xl:max-w-[1280px] py-12 lg:flex">
-          <div className="basis-1/4 px-3">
-            <h4 className="text-white mb-2">Subscribe</h4>
-            <p className="text-[#98A0AA] text-sm">
-              In an ideal world this text wouldnt exist, a client would
-              acknowledge the importance of having web copy before the design
-              starts.
-            </p>
-            <form onSubmit={handleSubmit}>
-              <div className="my-4 relative">
-                <input
-                  placeholder="Email"
-                  className="py-1.5 pl-5 w-full pr-12 bg-[#2e313a]"
-                />
-
-                <a className="absolute right-4 top-2 ">
-                  <IoPaperPlane size={20} color="#acacac" />
-                </a>
-
-                {
-                  <p className="text-red-500 text-xs italic">
-                    Please input your Email
-                  </p>
-                }
-              </div>
-            </form>
-          </div>
-        </div>
-        <img src={hero_deck_mobile_app} className="" alt="professional" />
         <div className="bg-[rgb(10,34,63)] px-2">
           <div className="w-full xs:max-w-[544px] md:max-w-[720px] penfedL:max-w-[960px] lg:max-w-[1200px] mx-auto ">
             <div className="footer-ctn md:grid mx-auto penfedL:flex text-[#c7ccd3]">
