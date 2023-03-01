@@ -9,7 +9,7 @@ function Hero() {
           backgroundImage:
             "linear-gradient(rgba(0,0,0,0.827),rgba(0,0,0,0.3)),url('https://www.penfed.org/content/dam/penfed/general/img/2023/homepage/auto-promo-r1-billboard-1660x400.jpg')",
         }}
-        className="text-[white] text-[1.5rem] bg-right bg-cover w-[100%] h-[420px]"
+        className="text-[white] text-[1.5rem] bg-right bg-cover w-[100%] h-[420px] relative"
       >
         <div className="h-full w-full absolute top-0 left-0 text-[#ffffff] text-[20px]">
           <h2>AUTOS PROMOTION</h2>

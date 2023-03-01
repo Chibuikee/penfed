@@ -8,7 +8,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <NavBar />
-        <h2 className="font-bold">PENFEND</h2>
       </header>
       <main>
         <Routes>

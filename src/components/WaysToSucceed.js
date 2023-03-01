@@ -25,12 +25,13 @@ function WaysToSucceed() {
             </div>
             <div className=" p-[1.5rem] md:p-[3rem] md:flex-grow">
               <h3>Access Your Money Anywhere</h3>
-              <p className=" my-[10px] pb-[28px]">
+              <p className=" mt-[10px] pb-[28px]">
                 With access to over 85,000 fee free ATMs, PenFed makes it
                 convenient to withdraw cash, transfer funds or check your PenFed
                 checking or savings account balance. Find a fee free ATM near
                 you.
               </p>
+              <div className="h-[1px] w-full bg-slate-300 mb-5"></div>
               <button className="bg-[#047dba] cursor-pointer py-[0.375rem] px-[1.375rem] text-base font-[500] border rounded-[6px] border-solid border-[#398007]">
                 Locate ATM
               </button>
@@ -46,12 +47,13 @@ function WaysToSucceed() {
             </div>
             <div className=" md:p-[3rem] p-[1.5rem] md:flex-grow">
               <h3>Access Your Money Anywhere</h3>
-              <p className="my-[10px] pb-[28px]">
+              <p className="mt-[10px] pb-[28px]">
                 With access to over 85,000 fee free ATMs, PenFed makes it
                 convenient to withdraw cash, transfer funds or check your PenFed
                 checking or savings account balance. Find a fee free ATM near
                 you.
               </p>
+              <div className="h-[1px] w-full bg-slate-300 mb-5"></div>
               <button className="bg-[#047dba] cursor-pointer py-[0.375rem] px-[1.375rem] text-base font-[500] border rounded-[6px] border-solid border-[#398007]">
                 Locate ATM
               </button>
