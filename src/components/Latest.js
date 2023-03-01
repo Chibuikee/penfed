@@ -33,8 +33,11 @@ function Latest() {
   ];
 
   return (
-    <div className="h-full  text-[#ffffff] text-[20px] px-[8px]">
-      <div className="pc:grid m:flex flex-wrap latest-ctn justify-between">
+    <div className="h-full px-[8px]">
+      <h1 className="text-center  py-10 tracking-wide text-[2rem] text-[#000000] ">
+        The Latest From PenFed Credit Union
+      </h1>
+      <div className="pc:grid xs:flex flex-wrap latest-ctn justify-between">
         {ADdata.map((item, key) => (
           <div
             key={key}
@@ -42,7 +45,7 @@ function Latest() {
               backgroundImage:
                 "url('https://www.penfed.org/content/dam/penfed/general/img/2023/homepage/auto-promo-r1-billboard-1660x400.jpg')",
             }}
-            className="text-[#fff] text-[1.5rem] bg-right bg-cover p-4 relative mt-4 m:basis-[49%]"
+            className="text-[#fff] text-[1.5rem] bg-right bg-cover p-4 relative mt-4 xs:mt-[initial] xs:basis-[49%]"
           >
             <h2 className="mt-[8px] text-base font-[700] tracking-[3px]  text-[24px]">
               {item.name}

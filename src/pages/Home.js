@@ -10,8 +10,8 @@ function Home() {
     <section>
       <div>
         <Hero />
-        <Latest />
         <Subscribe />
+        <Latest />
         <Featuredarticles />
         <WaysToSucceed />
       </div>
