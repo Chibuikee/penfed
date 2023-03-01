@@ -14,7 +14,7 @@ function WaysToSucceed() {
             accounts, we have your back every step of the way.
           </p>
         </div>
-        <div className="flex">
+        <div className="pc:flex">
           <img
             src="https://www.penfed.org/content/dam/penfed/general/img/2021/homepage-tiles/ATM-Locator-Tile_2022.06.jpg"
             alt="atm"
@@ -32,7 +32,7 @@ function WaysToSucceed() {
             </button>
           </div>
         </div>
-        <div className="flex">
+        <div className="pc:flex">
           <div className="basis-[50%] p-[3rem]">
             <h3>Access Your Money Anywhere</h3>
             <p className="my-[10px] pb-[28px]">

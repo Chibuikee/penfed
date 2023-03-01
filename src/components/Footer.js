@@ -61,7 +61,7 @@ function Footer() {
                     {item.title}
                   </li>
                 ))}
-                <div className="w-full h-[2px] bg-[#233953] absolute left-0 bottom-0 penfedL:left-[200px] penfedL:h-full penfedL:w-[2px] "></div>
+                <div className="hidden md:block w-full h-[2px] bg-[#233953] absolute left-0 bottom-0 penfedL:left-[200px] penfedL:h-full penfedL:w-[2px] "></div>
               </ul>
 
               <ul className="middleFooter px-2 font-sans py-5  md:mr-[10px]">
