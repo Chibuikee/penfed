@@ -1,6 +1,7 @@
 import React from "react";
 import Featuredarticles from "../components/Featuredarticles";
 import Hero from "../components/heroSection/Hero";
+import Subscribe from "../components/Subscribe";
 import WaysToSucceed from "../components/WaysToSucceed";
 
 function Home() {
@@ -8,6 +9,7 @@ function Home() {
     <section>
       <div>
         <Hero />
+        <Subscribe />
         <Featuredarticles />
         <WaysToSucceed />
       </div>
