@@ -15,12 +15,12 @@ function WaysToSucceed() {
               accounts, we have your back every step of the way.
             </p>
           </div>
-          <div className="pc:flex mb-10 shadow-[6px_6px_26px_1px_rgba(0,0,0,0.87)]">
-            <div className="basis-[30%] w-full flex-shrink-0">
+          <div className="md:flex mb-10 rounded-[1.5rem] shadow-[6px_6px_26px_1px_rgba(0,0,0,0.87)]">
+            <div className="md:basis-[30%] w-full flex-shrink-0 ">
               <img
                 src="https://www.penfed.org/content/dam/penfed/general/img/2021/homepage-tiles/ATM-Locator-Tile_2022.06.jpg"
                 alt="atm"
-                className="max-w-full h-full"
+                className="w-full h-full"
               />
             </div>
             <div className=" p-[1.5rem] md:p-[3rem] md:flex-grow">
@@ -36,7 +36,14 @@ function WaysToSucceed() {
               </button>
             </div>
           </div>
-          <div className="pc:flex bg-[#fff] rounded-[1.5rem] shadow-[6px_6px_26px_1px_rgba(0,0,0,0.87)]">
+          <div className="md:flex bg-[#fff] rounded-[1.5rem] flex-row-reverse  shadow-[6px_6px_26px_1px_rgba(0,0,0,0.87)]">
+            <div className="md:basis-[30%] flex-shrink-0 ">
+              <img
+                src={hero_deck_mobile_app}
+                alt="assistant"
+                className="w-full h-full"
+              />
+            </div>
             <div className=" md:p-[3rem] p-[1.5rem] md:flex-grow">
               <h3>Access Your Money Anywhere</h3>
               <p className="my-[10px] pb-[28px]">
@@ -48,13 +55,6 @@ function WaysToSucceed() {
               <button className="bg-[#047dba] cursor-pointer py-[0.375rem] px-[1.375rem] text-base font-[500] border rounded-[6px] border-solid border-[#398007]">
                 Locate ATM
               </button>
-            </div>
-            <div className="basis-[30%] flex-shrink-0">
-              <img
-                src={hero_deck_mobile_app}
-                alt="assistant"
-                className="max-w-full h-full"
-              />
             </div>
           </div>
         </div>
