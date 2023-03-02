@@ -28,10 +28,12 @@ export default function Login() {
     <div className="relative flex flex-col justify-center min-h-screen overflow-hidden">
       <div className="w-full p-6 m-auto bg-white rounded-md  md:w-[50%] mx-auto">
         <div className="flex justify-center mt-[96px] mb-20">
-          <img
-            src={process.env.PUBLIC_URL + "/logo.png"}
-            className="w-[238px] h-[61.22px]"
-          />
+          <Link to="/">
+            <img
+              src={process.env.PUBLIC_URL + "/logo.png"}
+              className="w-[238px] h-[61.22px]"
+            />
+          </Link>
         </div>
         <form className="mt-6 ">
           <div className="mb-2">

@@ -31,10 +31,12 @@ function Dashboard() {
   return (
     <section className="pb-10 ">
       <div className="p-[27px] flex justify-between mr-2">
-        <img
-          src={process.env.PUBLIC_URL + "/logo.png"}
-          className="w-[140px] h-[35.5px]"
-        />
+        <Link to="/">
+          <img
+            src={process.env.PUBLIC_URL + "/logo.png"}
+            className="w-[140px] h-[35.5px]"
+          />
+        </Link>
         <Link to="/Login">
           <button className="bg-[#047dba] cursor-pointer py-[0.375rem] px-[1.375rem] text-base font-[500] border rounded-[6px] border-solid border-[#398007]">
             Log Out
