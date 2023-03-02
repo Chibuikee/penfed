@@ -58,12 +58,12 @@ function Services() {
   return (
     <section>
       <div>
-        <div>
+        <div className="bg-[#f0f9ff]">
           <div className="grid grid-cols-3 md:grid-cols-4 penfedL:grid-cols-9 md:[&>*:nth-child(9)]:hidden penfedL:[&>*:nth-child(9)]:block ">
             {ADdata.map((item, key) => (
               <div
                 key={key}
-                className="penfedL:p-[24px] border-[0.3px] border-solid border-[#464545]"
+                className="p-[24px] penfedL:px-[4px] border-[0.3px] penfedL:border-none border-solid border-[#464545]"
               >
                 <item.name size={40} className="mx-auto" />
                 <h4 className="mt-5 text-xs tracking-[0.5px] text-center cursor-pointer">

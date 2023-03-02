@@ -1,13 +1,24 @@
 import React from "react";
+import lc_how_to_qualify_for_credit_card from "../assets/images/lc-how-to-qualify-for-credit-card.jpg";
+import mkc_top_10_reasons_to_do_a_credit_union_refinance from "../assets/images/mkc-top-10-reasons-to-do-a-credit-union-refinance.jpg";
 
 function Featuredarticles() {
   const features = [
     {
+      img: lc_how_to_qualify_for_credit_card,
       link: "#",
       title: "10 Essential Strategies to Help You Qualify for a Credit Card",
     },
-    { link: "#", title: "Top Reasons for a Credit Union Home Refinance " },
-    { link: "#", title: "5 Proven Budgeting Strategies to Know" },
+    {
+      img: mkc_top_10_reasons_to_do_a_credit_union_refinance,
+      link: "#",
+      title: "Top Reasons for a Credit Union Home Refinance ",
+    },
+    {
+      img: "https://www.penfed.org/content/dam/penfed/blogimages/2021/lc-proven-budgeting-strategies.jpg",
+      link: "#",
+      title: "5 Proven Budgeting Strategies to Know",
+    },
   ];
 
   return (
@@ -22,8 +33,7 @@ function Featuredarticles() {
               <div className="basis-[45%] lg:basis-[30%]">
                 <div
                   style={{
-                    backgroundImage:
-                      "url('https://www.penfed.org/content/dam/penfed/blogimages/2021/lc-proven-budgeting-strategies.jpg')",
+                    backgroundImage: `url(${item.img})`,
                   }}
                   className="text-[white] text-[1.5rem] bg-center bg-cover  h-[220px] w-full "
                 ></div>

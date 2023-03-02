@@ -1,34 +1,35 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 function Latest() {
   const ADdata = [
     {
       name: "Sky-High Certificate Rates",
       info: "Earn 4.70% for 18 month terms and 4.65% for 15 month terms",
-      img: "#",
-      img: "#",
+      url: "#",
+      img: "https://www.penfed.org/content/dam/penfed/general/img/2023/homepage/deposits-homepage-tiles-16-533x756.jpeg",
       button: "Open Now",
-    },
-    {
-      name: "Save Faster for Your Next Big DIY",
-      info: "Earn 2.70% APY with PenFed`s Premium Online Savings",
-      url: "#",
-      img: "#",
-      button: "Start Saving",
-    },
-    {
-      name: "Because Some Expenses Can`t Wait",
-      info: "Get paid 2 days early when you set up direct deposits with PenFed checking accounts",
-      url: "#",
-      img: "#",
-      button: "See Options Now",
     },
     {
       name: "No Caps, No Limits, No Expiration",
       info: " Get more from your rewards with PenFed`s Power Cash Rewards card",
       url: "#",
-      img: "#",
+      img: "https://www.penfed.org/content/dam/penfed/general/img/2023/homepage/homepage-tiles-template-5-533x756.jpeg",
       button: "Apply Now",
+    },
+
+    {
+      name: "Because Some Expenses Can`t Wait",
+      info: "Get paid 2 days early when you set up direct deposits with PenFed checking accounts",
+      url: "#",
+      img: "https://www.penfed.org/content/dam/penfed/general/img/2023/homepage/checking-homepage-tiles-7-533x321.jpeg",
+      button: "See Options Now",
+    },
+    {
+      name: "Save Faster for Your Next Big DIY",
+      info: "Earn 2.70% APY with PenFed`s Premium Online Savings",
+      url: "#",
+      img: "https://www.penfed.org/content/dam/penfed/general/img/2023/homepage/pl-homepage-tiles-6-533x321.jpeg",
+      button: "Start Saving",
     },
   ];
 
@@ -42,8 +43,7 @@ function Latest() {
           <div
             key={key}
             style={{
-              backgroundImage:
-                "url('https://www.penfed.org/content/dam/penfed/general/img/2023/homepage/auto-promo-r1-billboard-1660x400.jpg')",
+              backgroundImage: `url(${item.img})`,
             }}
             className="text-[#fff] text-[1.5rem] bg-right bg-cover p-4 relative mt-4 xs:mt-[initial] xs:basis-[49%]"
           >

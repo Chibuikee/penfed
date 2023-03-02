@@ -5,15 +5,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function NavBar() {
-  const [navBarToggle, setNavBarToggle] = useState(false);
+  const [navBarToggle, setNavBarToggle] = useState(true);
 
-  const data = [
-    { name: "HOME" },
-    { name: "SERVICES" },
-    { name: "PRODUCTS" },
-    { name: "CONTACT" },
-    { name: "ABOUT" },
-  ];
   const ADdata = [
     {
       name: "ROUTING # 256078446",
@@ -75,11 +68,11 @@ function NavBar() {
           </button>
         </Link>
       </div>
-      <div className=" absolute s:static right-0 top-[33px] s:top-[50px]">
+      <div className=" absolute pc:static right-0 top-[33px] pc:top-[50px]">
         <input type="checkbox" id="check" className="hidden" />
         <label
           htmlFor="check"
-          className="navdrop-ctn block s:hidden absolute right-5"
+          className="navdrop-ctn block pc:hidden absolute right-5"
           onClick={() => setNavBarToggle(!navBarToggle)}
         >
           {navBarToggle ? (
