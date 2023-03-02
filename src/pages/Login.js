@@ -12,7 +12,7 @@ export default function Login() {
   const handleSubmit = (event) => {
     event.preventDefault(); // prevent the default form submission behavior
     console.log("Details of user", formValue);
-    navigate("/");
+    navigate("/Dashboard");
   };
 
   function handleChange(e) {
