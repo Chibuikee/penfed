@@ -1,4 +1,9 @@
 import { FiSearch, FiHeart, FiShoppingCart } from "react-icons/fi";
+import { CgCreditCard } from "react-icons/cg";
+import { TfiWrite } from "react-icons/tfi";
+import { AiOutlineCar } from "react-icons/ai";
+import { SlNote } from "react-icons/sl";
+import { BsHouse } from "react-icons/bs";
 export const ADdata = [
   {
     name: "ROUTING # 256078446",
@@ -164,6 +169,7 @@ export const NavMenunew = [
 export const navdatajson = [
   {
     title: { name: "CHECKING & SAVINGS", url: "/" },
+    icon: TfiWrite,
     childList: [
       {
         title: { name: "CHECKING", url: "/CHECKING" },
@@ -267,6 +273,7 @@ export const navdatajson = [
 
   {
     title: { name: "CREDIT CARDS", url: "/CREDIT_CARDS" },
+    icon: CgCreditCard,
     childList: [
       {
         title: { name: "OUR CARDS", url: "/OUR_CARDS" },
@@ -284,6 +291,7 @@ export const navdatajson = [
   },
   {
     title: { name: "AUTO", url: "/AUTO" },
+    icon: AiOutlineCar,
     childList: [
       {
         title: { name: "AUTO LOANS", url: "/AUTO_LOANS" },
@@ -309,6 +317,7 @@ export const navdatajson = [
 
   {
     title: { name: "MORTGAGE & HOME EQUITY", url: "/MORTGAGE_&_HOME_EQUITY" },
+    icon: BsHouse,
     childList: [
       {
         title: { name: "PURCHASE", url: "/PURCHASE" },

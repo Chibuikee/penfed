@@ -40,11 +40,11 @@ function NavBarr({ data }) {
     <div
       className={` ${
         !data.navBarToggle ? "fixed" : "hidden"
-      } top-0 h-full left-0 w-full bg-[#047dba] z-[999] overflow-auto`}
+      } top-0 h-[100vh] left-0 w-full bg-[#0c264b] z-[99]`}
     >
-      <nav className="  bg-[#0c264b] h-[600px] relative overflow-y-auto">
+      <nav className="  bg-[#0c264b] relative">
         {activeFolder == null || activeFolder?.length == 0 ? (
-          <div className="flex justify-between items-center p-6 flex-shrink-0 mr-6">
+          <div className="flex justify-between items-center py-6 px-2 flex-shrink-0 mr-4 ">
             <span className="text-xl font-semibold tracking-tight text-white">
               <img
                 className="w-[140px] h-[36.2px]"
@@ -62,6 +62,7 @@ function NavBarr({ data }) {
                 <RiCloseFill size={20} className="font-[700]" />
               </button>
             </div>
+            <div className="h-[0.5px] w-[100%] absolute top-[80px] left-0 bg-[#8b8b8b]"></div>
           </div>
         ) : null}
 
@@ -83,9 +84,12 @@ function NavBarr({ data }) {
                           // if (activeFolder == isOpen) setActiveFolder(null);
                           setIsOpen(folder.title.name);
                         }}
-                        className="text-[yellow] flex justify-between"
+                        className="text-[#ffffff] flex justify-between text-[14px] font-semibold py-5"
                       >
-                        <h3>{folder.title.name}</h3>
+                        <div className="flex">
+                          <folder.icon size={20} />
+                          <h3 className="ml-2">{folder.title.name}</h3>
+                        </div>
                         <span className="inline">
                           <MdArrowForwardIos className="inline ml-10" />
                         </span>
@@ -148,7 +152,7 @@ function NavBarr({ data }) {
                   </div>
                 ))}
               </ul>
-              <div className="grid grid-cols-2 list-none mb-5">
+              <div className="grid grid-cols-2 list-none mt-6">
                 {ADdata.filter(
                   (item) =>
                     item.name !== "ROUTING # 256078446" &&
@@ -162,7 +166,7 @@ function NavBarr({ data }) {
             </div>
           }
         </div>
-        <div className="py-[9px] bg-[#455974] absolute bottom-0 left-0 w-full">
+        <div className="pt-[9px] pb-[25px] bg-[#455974] fixed bottom-0 left-0 w-full">
           <h3 className="text-xs text-center text-[#ffffff]">
             ROUTING # 256078446
           </h3>

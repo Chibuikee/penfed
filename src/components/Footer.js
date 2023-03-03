@@ -116,7 +116,7 @@ function Footer() {
                   </h1>
                 ))}
                 <img
-                  className="px-2 fixed right-0 bottom-5"
+                  className="px-2 fixed right-0 bottom-5 z-[999]"
                   src="https://resources.digital-cloud.medallia.com/wdcus/56048/resources/image/1642520523390_mobilefeedbacknavy50px.png"
                 />
               </div>
