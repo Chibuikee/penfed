@@ -3,8 +3,9 @@ import { FaBars } from "react-icons/fa";
 import { RiCloseFill } from "react-icons/ri";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ADdata } from "./navdata";
+import { ADdata, navdatajson } from "./navdata";
 import NavBarr from "../navigattion";
+import NavSubFolders from "../NavSubFolders";
 
 function NavBar() {
   const [navBarToggle, setNavBarToggle] = useState(true);
@@ -24,11 +25,23 @@ function NavBar() {
           ))}
         </ul>
       </div>
-      <div className="p-[27px] flex justify-between mr-7">
+      <div className="p-[27px] flex justify-between mr-7 relative">
         <img
           src={process.env.PUBLIC_URL + "/logo.png"}
           className="w-[140px] h-[35.5px]"
         />
+        <div className="pc:flex  hidden">
+          {navdatajson.map((item, key) => (
+            <div key={item.title.name} className="bg-[#ffffff]">
+              <div className="main py-5 font-bold px-[50px]">
+                {item.title.name}
+              </div>
+              <div className="hidden sub absolute right-0 left-0 top-[70px] z-[999]">
+                <NavSubFolders data={item} />
+              </div>
+            </div>
+          ))}
+        </div>
         <Link to="/Login">
           <button className="bg-[#047dba] cursor-pointer py-[0.375rem] px-[1.375rem] text-base font-[500] border rounded-[6px] border-solid border-[#398007]">
             Login

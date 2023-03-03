@@ -3,6 +3,7 @@ import { navdatajson } from "./navdata";
 
 import { Link, useNavigate } from "react-router-dom";
 import NavBarr from "../navigattion";
+import NavSubFolders from "../NavSubFolders";
 function Navtest() {
   const [navBarToggle, setNavBarToggle] = useState(true);
   //   const navigate = useNavigate();
@@ -28,9 +29,28 @@ function Navtest() {
           MUSKNET
         </a>
       </Link>
-      {<NavBarr data={navdatajson} />}
+      <div>
+        <div className="flex gap-10">
+          {navdatajson.map((item, key) => (
+            <div key={item.title.name} className="">
+              <div className="main">{item.title.name}</div>
+              <div className="hidden sub">
+                <NavSubFolders data={item} />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
 
 export default Navtest;
+{
+  /* <div className="flex gap-10">
+          {navdatajson[0].childList.map((item) => (
+            <div key={item.title.name}>{item.title.name}</div>
+          ))}
+
+        </div> */
+}

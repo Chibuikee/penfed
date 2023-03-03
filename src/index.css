@@ -134,3 +134,6 @@ a:active {
     justify-content: space-between;
   }
 }
+.main:hover ~ .sub {
+  display: block;
+}
