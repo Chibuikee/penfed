@@ -66,10 +66,10 @@ function NavBarr({ data }) {
           </div>
         ) : null}
 
-        <div className="p-6">
+        <div className="">
           {
             <div>
-              <div className="">
+              <div className="px-6">
                 {activeFolder == null || activeFolder?.length == 0
                   ? navdatajson?.map((folder) => (
                       <li
@@ -84,7 +84,7 @@ function NavBarr({ data }) {
                           // if (activeFolder == isOpen) setActiveFolder(null);
                           setIsOpen(folder.title.name);
                         }}
-                        className="text-[#ffffff] flex justify-between text-[14px] font-semibold py-5"
+                        className="text-[#ffffff] flex justify-between text-[14px] font-semibold py-5 "
                       >
                         <div className="flex">
                           <folder.icon size={20} />
@@ -98,8 +98,14 @@ function NavBarr({ data }) {
                   : null}
               </div>
               <ul className="">
-                <div className="flex justify-between">
-                  <div className="flex">
+                <div
+                  className={`flex justify-between pl-2 pr-6 items-center ${
+                    activeFolder == null || activeFolder?.length == 0
+                      ? null
+                      : "py-5"
+                  } bg-[#ecebeb] `}
+                >
+                  <div className="flex text-[18px] font-semibold ">
                     <h1
                       onClick={() => {
                         // console.log("back handler clicked");
@@ -109,7 +115,7 @@ function NavBarr({ data }) {
                         // console.log(go[0], "back handler");
                         setIsOpen(go[0]);
                       }}
-                      className={`text-[red] ${
+                      className={`text-[#0c264b] mt-[2px] ${
                         activeFolder == null || activeFolder?.length == 0
                           ? "hidden"
                           : "block"
@@ -119,40 +125,49 @@ function NavBarr({ data }) {
                       <MdArrowBackIosNew size={20} />
                     </h1>
 
-                    <h1 className="text-[red] inline">
+                    <h1 className="text-[#0c264b] inline ml-2">
                       {subFolder?.title.name}
                     </h1>
                   </div>
 
                   <RiCloseFill
-                    className={`text-[red] ${
+                    className={`text-[#0c264b] ${
                       activeFolder == null || activeFolder?.length == 0
                         ? "hidden"
                         : "block"
                     }`}
+                    size={35}
                   />
                 </div>
 
-                {subFolder?.childList.map((subfolder) => (
-                  <div
-                    key={subfolder.title.name}
-                    onClick={() => {
-                      setActiveFolder((item) => [
-                        ...item,
-                        subfolder.title.name,
-                      ]);
-                      setIsOpen(subfolder.title.name);
-                    }}
-                    className="text-[blue] flex justify-between"
-                  >
-                    <h3> {subfolder.title.name}</h3>
-                    <span className="inline">
-                      <MdArrowForwardIos className="inline ml-10" />
-                    </span>
-                  </div>
-                ))}
+                <div
+                  className={` pb-10 ${
+                    activeFolder == null || activeFolder?.length == 0
+                      ? null
+                      : "bg-[#ffffff]"
+                  }  `}
+                >
+                  {subFolder?.childList.map((subfolder) => (
+                    <div
+                      key={subfolder.title.name}
+                      onClick={() => {
+                        setActiveFolder((item) => [
+                          ...item,
+                          subfolder.title.name,
+                        ]);
+                        setIsOpen(subfolder.title.name);
+                      }}
+                      className="text-[#0d6efd] flex justify-between bg-white items-center font-semibold px-6 pt-10"
+                    >
+                      <h3 className=""> {subfolder.title.name}</h3>
+                      <span className="inline">
+                        <MdArrowForwardIos className="inline ml-10" />
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </ul>
-              <div className="grid grid-cols-2 list-none mt-6">
+              <div className="grid grid-cols-2 list-none mt-6 px-6">
                 {ADdata.filter(
                   (item) =>
                     item.name !== "ROUTING # 256078446" &&
