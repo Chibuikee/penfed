@@ -73,27 +73,31 @@ function Dashboard() {
           </h2>
         </div>
         <div className="bg-[#f0f9ff]">
-          <div className="grid grid-cols-3 md:grid-cols-4 px-5 ">
-            {ADdata.map((item, key) => (
-              <div
-                key={key}
-                className=" border-[0.3px] border-solid border-[#464545] py-4 px-2"
-              >
-                <item.name size={40} className="mx-auto" />
-                <h4 className="mt-5 text-xs tracking-[0.5px] text-center cursor-pointer ">
-                  {item.info}
-                </h4>
+          <div className="grid xxs:grid-cols-2 pc:grid-cols-3">
+            <div className=" border-[0.3px] border-solid border-[#464545] pb-5 px-5">
+              <h2 className="font-bold mr-2 py-4 px-2">Transaction history</h2>
+              <div className=" w-full h-[0.5px] mb-2 bg-[black]"></div>
+              <div className="ml-3">
+                Jan 2018<span>-</span>Dec 2020
               </div>
-            ))}
-          </div>
-          <div className="px-5">
-            <h2 className="font-bold mr-2">
-              Transaction history: From
-              <span> Jan 2018</span>-<span>Dec 2020</span>
-            </h2>
-            <h3 className="text-xs">
-              eternal-transfer-612591-from-Helen-Ross-LLC
-            </h3>
+            </div>
+            <div className=" border-[0.3px] border-solid border-[#464545] pb-5 px-5">
+              <h2 className="font-bold mr-2 py-4 px-2">Amount</h2>
+              <div className=" w-full h-[0.5px] mb-2 bg-[black]"></div>
+              <h3 className="text-xs">
+                <span className="text-xs ml-3">1,850,988</span>
+              </h3>
+            </div>
+            <div className=" border-[0.3px] border-solid border-[#464545] pb-5 px-5">
+              <h2 className="font-bold mr-2 py-4 px-2">
+                Narration
+                <span> Jan 2018</span>-<span>Dec 2020</span>
+              </h2>
+              <div className=" w-full h-[0.5px] mb-2 bg-[black]"></div>
+              <h3 className="text-xs ml-2">
+                eternal-transfer-612591-from-Helen-Ross-LLC
+              </h3>
+            </div>
           </div>
         </div>
       </div>

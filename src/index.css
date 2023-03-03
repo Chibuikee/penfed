@@ -137,3 +137,6 @@ a:active {
 .main:hover ~ .sub {
   display: block;
 }
+.sub:hover {
+  display: block;
+}
