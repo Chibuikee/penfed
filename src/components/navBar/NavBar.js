@@ -3,47 +3,14 @@ import { FaBars } from "react-icons/fa";
 import { RiCloseFill } from "react-icons/ri";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { ADdata } from "./navdata";
+import NavBarr from "../navigattion";
 
 function NavBar() {
   const [navBarToggle, setNavBarToggle] = useState(true);
 
-  const ADdata = [
-    {
-      name: "ROUTING # 256078446",
-      url: "#",
-    },
-    {
-      name: "PARTNERS",
-      url: "#",
-    },
-    {
-      name: "MEMBER DISCOUNTS",
-      url: "#",
-    },
-    {
-      name: "WEALTH",
-      url: "#",
-    },
-    {
-      name: "FOUNDATION",
-      url: "#",
-    },
-    {
-      name: "BRANCHES & ATMS",
-      url: "#",
-    },
-    {
-      name: "ABOUT",
-      url: "#",
-    },
-    {
-      name: "SEARCH",
-      url: "#",
-    },
-  ];
-
   return (
-    <nav className="">
+    <nav className="relative">
       <div className="p-[6px] bg-[#f4f4f4] hidden lg:block">
         <ul className="flex justify-between ml-[150px] ">
           {ADdata.map((item) => (
@@ -81,15 +48,9 @@ function NavBar() {
             <RiCloseFill size={25} className="navdrop-2" />
           )}
         </label>
-
-        {/* <ul className="s:flex w-[200px] s:w-[initial] mt-[51px] s:mt-[10px]  p-4 s:p-[initial] justify-between menu-main bg-[#edf5fa] rounded s:bg-[initial] s:h-[initial] h-[242px]">
-          {data.map((item, key) => (
-            <li key={key} className="my-3 s:my-[initial] text-sm font-semibold">
-              {item.name}
-            </li>
-          ))}
-        </ul> */}
       </div>
+
+      <NavBarr data={{ setNavBarToggle, navBarToggle }} />
     </nav>
   );
 }

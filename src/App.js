@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import Navtest from "./components/navBar/Navtest";
 import Dashboard from "./pages/Dashboard";
 // import Footer from "./components/Footer";
 // import NavBar from "./components/navBar/NavBar";
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path="/Navtest" element={<Navtest />} />
           {/* <Route path="Details/:productId" element={<DetailsPage />} /> */}
         </Routes>
       </main>
