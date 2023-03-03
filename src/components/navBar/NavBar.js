@@ -25,7 +25,7 @@ function NavBar() {
           ))}
         </ul>
       </div>
-      <div className="p-[27px] flex justify-between mr-7 relative">
+      <div className="p-[27px] flex justify-between mr-7 relative items-center">
         <img
           src={process.env.PUBLIC_URL + "/logo.png"}
           className="w-[140px] h-[35.5px]"
@@ -33,20 +33,27 @@ function NavBar() {
         <div className="pc:flex  hidden">
           {navdatajson.map((item, key) => (
             <div key={item.title.name} className="bg-[#ffffff]">
-              <div className="main py-5 font-bold px-[50px]">
+              <div className="main py-5 font-bold px-[7px] lg:px-[20px] ">
                 {item.title.name}
               </div>
-              <div className="hidden sub absolute right-0 left-0 top-[70px] z-[999]">
+              <div className="hidden sub absolute right-0 left-0 top-[90px] z-[999]">
                 <NavSubFolders data={item} />
               </div>
             </div>
           ))}
         </div>
-        <Link to="/Login">
-          <button className="bg-[#047dba] cursor-pointer py-[0.375rem] px-[1.375rem] text-base font-[500] border rounded-[6px] border-solid border-[#398007]">
-            Login
-          </button>
-        </Link>
+        <div className="flex gap-3 shrink-0 ">
+          <Link to="/Login">
+            <button className="bg-[#047dba] text-[white] hidden pc:block cursor-pointer py-[0.375rem] px-[1.375rem] text-base font-[500] border rounded-[6px] border-solid border-[#047dba]">
+              Join Now
+            </button>
+          </Link>
+          <Link to="/Login">
+            <button className="pc:text-[#047dba] pc:bg-[white] bg-[#047dba] text-[white] cursor-pointer py-[0.375rem] px-[1.375rem] text-base font-[500] border rounded-[6px] border-solid border-[#047dba]">
+              Login
+            </button>
+          </Link>
+        </div>
       </div>
       <div className=" absolute pc:static right-0 top-[33px] pc:top-[50px]">
         <input type="checkbox" id="check" className="hidden" />

@@ -87,11 +87,11 @@ function Footer() {
                 </div>
                 <div className="flex gap-[16px] md:ml-5">
                   <img
-                    className="h-[40px] w-[135px] mt-5"
+                    className="h-[40px] w-[120px] mt-5"
                     src={mobile_icon_appstorebadge}
                   />
                   <img
-                    className="h-[40px] w-[135px] mt-5"
+                    className="h-[40px] w-[120px] mt-5"
                     src={mobile_icon_googleplaybadge}
                   />
                 </div>

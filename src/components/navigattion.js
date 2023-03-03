@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ADdata, navdatajson } from "./navBar/navdata";
-import { FaBars } from "react-icons/fa";
+// import { FaBars } from "react-icons/fa";
 import { RiCloseFill } from "react-icons/ri";
 import { HiSearch } from "react-icons/hi";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
