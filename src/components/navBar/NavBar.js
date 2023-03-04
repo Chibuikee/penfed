@@ -36,7 +36,7 @@ function NavBar() {
               <div className="main py-5 font-bold px-[7px] lg:px-[20px] ">
                 {item.title.name}
               </div>
-              <div className="hidden sub absolute right-0 left-0 top-[90px] z-[999]">
+              <div className="hidden sub absolute right-0 left-0 top-[95px] z-[999]">
                 <NavSubFolders data={item} />
               </div>
             </div>

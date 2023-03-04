@@ -268,6 +268,27 @@ export const navdatajson = [
           },
         ],
       },
+      {
+        title: { name: "HOW CAN WE HELP?", url: "/HOW_CAN_WE_HELP" },
+        childList: [
+          {
+            title: { name: "Contact Us", url: "/Contact_Us" },
+            childList: [],
+          },
+          {
+            title: { name: "FAQs", url: "/FAQs" },
+            childList: [],
+          },
+          {
+            title: { name: "Forms", url: "/IRA_SAVINGS_ACCOUNT" },
+            childList: [],
+          },
+          {
+            title: { name: "Advice Center", url: "/Advice_Center" },
+            childList: [],
+          },
+        ],
+      },
     ],
   },
 
@@ -282,6 +303,39 @@ export const navdatajson = [
             title: {
               name: "CREDIT CARDS OVERVIEW",
               url: "/CREDIT_CARDS_OVERVIEW",
+            },
+            childList: [],
+          },
+        ],
+      },
+      {
+        title: { name: "HOW CAN WE HELP?", url: "/HOW_CAN_WE_HELP?" },
+        childList: [
+          {
+            title: {
+              name: "Contact Us",
+              url: "/Contact_Us",
+            },
+            childList: [],
+          },
+          {
+            title: {
+              name: "FAQs",
+              url: "/FAQs",
+            },
+            childList: [],
+          },
+          {
+            title: {
+              name: "Disclosures",
+              url: "/Disclosures",
+            },
+            childList: [],
+          },
+          {
+            title: {
+              name: " Resource Center",
+              url: "/Resource_Center",
             },
             childList: [],
           },
@@ -308,6 +362,27 @@ export const navdatajson = [
               name: "CAR BUYING SERVICE",
               url: "/CAR_BUYING_SERVICE",
             },
+            childList: [],
+          },
+        ],
+      },
+      {
+        title: { name: "HOW CAN WE HELP?", url: "/HOW_CAN_WE_HELP" },
+        childList: [
+          {
+            title: { name: "Contact Us", url: "/Contact_Us" },
+            childList: [],
+          },
+          {
+            title: { name: "FAQs", url: "/FAQs" },
+            childList: [],
+          },
+          {
+            title: { name: "Forms", url: "/IRA_SAVINGS_ACCOUNT" },
+            childList: [],
+          },
+          {
+            title: { name: "Advice Center", url: "/Advice_Center" },
             childList: [],
           },
         ],
@@ -393,6 +468,46 @@ export const navdatajson = [
             title: {
               name: "HELOC",
               url: "/HELOC",
+            },
+            childList: [],
+          },
+        ],
+      },
+      {
+        title: { name: "TOOLS & RESOURCES", url: "/TOOLS_&_RESOURCES" },
+        childList: [
+          {
+            title: {
+              name: "First-Time Homebuyer",
+              url: "/First-Time_Homebuyer",
+            },
+            childList: [],
+          },
+          {
+            title: {
+              name: "PenFed Title, LLC",
+              url: "/PenFed_Title,_LLC",
+            },
+            childList: [],
+          },
+          {
+            title: {
+              name: "Mortgage Knowledge Center",
+              url: "/Mortgage_Knowledge_Center",
+            },
+            childList: [],
+          },
+          {
+            title: {
+              name: "Mortgage Calculators",
+              url: "/Mortgage_Calculators",
+            },
+            childList: [],
+          },
+          {
+            title: {
+              name: "Contact PenFed Mortgage Team",
+              url: "/Contact_PenFed_Mortgage_Team",
             },
             childList: [],
           },

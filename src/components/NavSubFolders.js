@@ -2,7 +2,7 @@ import React from "react";
 
 function NavSubFolders({ data }) {
   return (
-    <div className="flex justify-between w-[100vw] bg-[white] ">
+    <div className="flex justify-between w-[100vw] bg-[white]  after:content-[''] after:absolute after:top-0 after:h-[3px] after:w-[100%] after:left-0 after:right-0 after:bg-[#047dba] ">
       {data.childList.map((item) => (
         <div
           key={item.title.name}

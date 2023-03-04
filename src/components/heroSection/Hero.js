@@ -7,9 +7,9 @@ function Hero() {
       <div
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0,0,0,0.827),rgba(0,0,0,0.3)),url('https://www.penfed.org/content/dam/penfed/general/img/2023/homepage/auto-promo-r1-billboard-1660x400.jpg')",
+            "linear-gradient(rgba(0,0,0,0.127),rgba(0,0,0,0.3)),url('https://www.penfed.org/content/dam/penfed/general/img/2023/homepage/billboard-Hero-img-auto-desktop.jpg')",
         }}
-        className="text-[#fff] text-[1.5rem] bg-right bg-cover w-[100%] h-[420px] relative"
+        className="text-[#fff] text-[1.5rem] bg-right  bg-cover w-[100%] h-[420px] relative"
       >
         <div className="h-full mx-auto xs:max-w-[544px] md:max-w-[720px] penfedL:max-w-[960px] lg:max-w-[1200px] absolute top-0 left-0 right-0 text-[#ffffff] text-[20px] px-[36px]">
           <h2 className="mt-[8px] text-base font-[700] tracking-[3px] pt-[24px]">
