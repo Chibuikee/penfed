@@ -25,10 +25,10 @@ function NavBar() {
           ))}
         </ul>
       </div>
-      <div className="p-[27px] flex justify-between mr-7 relative items-center">
+      <div className="p-[27px] flex justify-between mr-7 xxxs:mr-12 relative items-center">
         <img
           src={process.env.PUBLIC_URL + "/logo.png"}
-          className="w-[140px] h-[35.5px]"
+          className="w-[140px] h-[35.5px] pc:w-[240px] pc:h-[60.88px]"
         />
         <div className="pc:flex  hidden">
           {navdatajson.map((item, key) => (
@@ -36,7 +36,7 @@ function NavBar() {
               <div className="main py-5 font-bold px-[7px] lg:px-[20px] ">
                 {item.title.name}
               </div>
-              <div className="hidden sub absolute right-0 left-0 top-[95px] z-[999]">
+              <div className="hidden sub absolute right-0 left-0 top-[95px] pc:top-[110px] z-[999]">
                 <NavSubFolders data={item} />
               </div>
             </div>
@@ -55,7 +55,7 @@ function NavBar() {
           </Link>
         </div>
       </div>
-      <div className=" absolute pc:static right-0 top-[33px] pc:top-[50px]">
+      <div className=" absolute pc:static right-0 xxxs:right-5 top-[33px] pc:top-[50px]">
         <input type="checkbox" id="check" className="hidden" />
         <label
           htmlFor="check"

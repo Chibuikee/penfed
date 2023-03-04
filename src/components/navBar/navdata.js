@@ -291,12 +291,7 @@ export const navdatajson = [
       },
       {
         title: { name: "", url: "/HOW_CAN_WE_HELP" },
-        childList: [
-          {
-            title: { name: "Contact Us", url: "/Contact_Us" },
-            childList: [],
-          },
-        ],
+        childList: [],
         url: {
           name: "https://www.penfed.org/content/dam/penfed/general/img/2022/global-nav/2022.06_PF_PFOL-Checking-Tiles-R3_Checking_300x250-3.jpg",
           url: "/Contact_Us",
@@ -356,13 +351,7 @@ export const navdatajson = [
       },
       {
         title: { name: "", url: "/HOW_CAN_WE_HELP" },
-        childList: [
-          {
-            title: { name: "Contact Us", url: "/Contact_Us" },
-
-            childList: [],
-          },
-        ],
+        childList: [],
         url: {
           name: "https://www.penfed.org/content/dam/penfed/general/img/2020/credit-cards/Gobal_Nav_Menu_Gold_3.jpg",
           url: "/Contact_Us",
@@ -416,15 +405,75 @@ export const navdatajson = [
       },
       {
         title: { name: "", url: "/HOW_CAN_WE_HELP" },
+        childList: [],
+        url: {
+          name: "https://www.penfed.org/content/dam/penfed/general/img/2023/auto/auto-promo-website-images-r-2-300-x-250-universal-nav-bar-updated.jpg",
+          url: "/Contact_Us",
+        },
+      },
+    ],
+  },
+  {
+    title: { name: "LOANS", url: "/LOANS" },
+    icon: AiOutlineCar,
+    childList: [
+      {
+        title: { name: "PERSONAL LOANS", url: "/PERSONAL_LOANS" },
         childList: [
           {
-            title: { name: "Contact Us", url: "/Contact_Us" },
-
+            title: {
+              name: "Personal Loans",
+              url: "/Personal_Loans",
+            },
             childList: [],
           },
         ],
+      },
+      {
+        title: { name: "STUDENT LOANS", url: "/STUDENT_LOANS" },
+        childList: [
+          {
+            title: {
+              name: "Student Loan Refinancing",
+              url: "/Student_Loan_Refinancing",
+            },
+            childList: [],
+          },
+          {
+            title: {
+              name: "In-School Student Loans",
+              url: "/In-School_Student_Loans",
+            },
+            childList: [],
+          },
+        ],
+      },
+      {
+        title: { name: "HOW CAN WE HELP?", url: "/HOW_CAN_WE_HELP" },
+        childList: [
+          {
+            title: { name: "Contact Us", url: "/Contact_Us" },
+            childList: [],
+          },
+          {
+            title: { name: "FAQs", url: "/FAQs" },
+            childList: [],
+          },
+          {
+            title: { name: "Forms", url: "/IRA_SAVINGS_ACCOUNT" },
+            childList: [],
+          },
+          {
+            title: { name: "Advice Center", url: "/Advice_Center" },
+            childList: [],
+          },
+        ],
+      },
+      {
+        title: { name: "", url: "/HOW_CAN_WE_HELP" },
+        childList: [],
         url: {
-          name: "https://www.penfed.org/content/dam/penfed/general/img/2023/auto/auto-promo-website-images-r-2-300-x-250-universal-nav-bar-updated.jpg",
+          name: "https://www.penfed.org/content/dam/penfed/general/img/2018/globalnav/globalnav_promo_newstudentloanoption_300x250.jpg",
           url: "/Contact_Us",
         },
       },
@@ -556,15 +605,153 @@ export const navdatajson = [
       },
       {
         title: { name: "", url: "/HOW_CAN_WE_HELP" },
+        childList: [],
+        url: {
+          name: "https://www.penfed.org/content/dam/penfed/general/img/2022/global-nav/mortgage-imagesglobalnav-promo-powercash.jpeg",
+          url: "/Contact_Us",
+        },
+      },
+    ],
+  },
+  {
+    title: { name: "LEARN", url: "/LEARN" },
+    icon: AiOutlineCar,
+    childList: [
+      {
+        title: { name: "LEARNING HUB", url: "/LEARNING_HUB" },
         childList: [
           {
-            title: { name: "Contact Us", url: "/Contact_Us" },
-
+            title: {
+              name: "Learning Center",
+              url: "/Learning_Center",
+            },
+            childList: [],
+          },
+          {
+            title: {
+              name: "Mortgage Knowledge Center",
+              url: "/Mortgage_Knowledge_Center",
+            },
+            childList: [],
+          },
+          {
+            title: {
+              name: "Calculators",
+              url: "/Calculators",
+            },
+            childList: [],
+          },
+          {
+            title: {
+              name: "Advice Center",
+              url: "/Advice_Center",
+            },
+            childList: [],
+          },
+          {
+            title: {
+              name: "Financial Hardship Center",
+              url: "/Financial_Hardship_Center",
+            },
+            childList: [],
+          },
+          {
+            title: {
+              name: "Emergency Furlough Relief Assistance",
+              url: "/Emergency_Furlough_Relief_Assistance",
+            },
             childList: [],
           },
         ],
+      },
+      {
+        title: { name: "ABOUT PENFED", url: "/ABOUT_PENFED" },
+        childList: [
+          {
+            title: {
+              name: "Advice Center",
+              url: "/Advice_Center",
+            },
+            childList: [],
+          },
+          {
+            title: {
+              name: "FAQs",
+              url: "/FAQs",
+            },
+            childList: [],
+          },
+          {
+            title: {
+              name: "Forms",
+              url: "/Forms",
+            },
+            childList: [],
+          },
+        ],
+      },
+      {
+        title: { name: "SECURITY & FRAUD", url: "/SECURITY_&_FRAUD" },
+        childList: [
+          {
+            title: {
+              name: "Security Center",
+              url: "/Security_Center",
+            },
+            childList: [],
+          },
+        ],
+      },
+
+      {
+        title: { name: "PROTECTION", url: "/PROTECTION" },
+        childList: [
+          {
+            title: {
+              name: "Extended Warranty",
+              url: "/Extended_Warranty",
+            },
+            childList: [],
+          },
+          {
+            title: {
+              name: "GAP Insurance",
+              url: "/GAP_Insurance",
+            },
+            childList: [],
+          },
+          {
+            title: {
+              name: "Debt_Protection",
+              url: "/Debt_Protection",
+            },
+            childList: [],
+          },
+        ],
+      },
+
+      {
+        title: { name: "HOW CAN WE HELP?", url: "/HOW_CAN_WE_HELP" },
+        childList: [
+          {
+            title: { name: "Press Room", url: "/Press_Room" },
+            childList: [],
+          },
+          {
+            title: { name: "Careers", url: "/Careers" },
+            childList: [],
+          },
+          {
+            title: { name: "Contact Us", url: "/Contact_Us" },
+            childList: [],
+          },
+        ],
+      },
+      {
+        title: { name: "", url: "/HOW_CAN_WE_HELP" },
+        childList: [],
         url: {
-          name: "https://www.penfed.org/content/dam/penfed/general/img/2022/global-nav/mortgage-imagesglobalnav-promo-powercash.jpeg",
+          name: "https://www.penfed.org/content/dam/penfed/general/img/2022/TurboTax%20Image.jpeg",
           url: "/Contact_Us",
         },
       },
