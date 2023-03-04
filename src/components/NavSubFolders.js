@@ -11,6 +11,9 @@ function NavSubFolders({ data }) {
           <h1 className="bg-[#9fabc3] text-[#181515] h-[50px] leading-[50px] pl-9 ">
             {item.title.name}
           </h1>
+          {item?.url?.name && (
+            <img src={item?.url?.name} className="" alt="advert" />
+          )}
           <div className=" after:content-[''] after:absolute after:top-14 after:h-[60%] after:w-[0.5px] after:bg-[#dbd5d5]">
             {item.childList.map((item) => (
               <div
