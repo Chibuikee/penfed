@@ -758,3 +758,41 @@ export const navdatajson = [
     ],
   },
 ];
+
+<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+  <th
+    scope="row"
+    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+  >
+    02/05/2020
+  </th>
+  <td class="px-6 py-4">eternal-transfer-612221-from-NNPC-</td>
+  <td class="px-6 py-4">$1,850,988</td>
+  <td class="px-6 py-4">Credit</td>
+</tr>;
+
+export const penfedTransactionData = [
+  {
+    date: "1/03/2018",
+    amount: "$77k",
+    narration: "eternal-transfer-612221-from-Helen-Ross-LLC",
+    type: "",
+  },
+  { date: "3/03/2018", amount: "-----", narration: "-----", type: "-----" },
+  { date: "5/03/2018", amount: "-----", narration: "-----", type: "-----" },
+  { date: "7/03/2018", amount: "-----", narration: "-----", type: "-----" },
+  { date: "9/03/2018", amount: "-----", narration: "-----", type: "-----" },
+  { date: "11/03/2018", amount: "-----", narration: "-----", type: "-----" },
+  { date: "1/03/2019", amount: "-----", narration: "-----", type: "-----" },
+  { date: "3/03/2019", amount: "-----", narration: "-----", type: "-----" },
+  { date: "5/03/2019", amount: "-----", narration: "-----", type: "-----" },
+  { date: "7/03/2019", amount: "-----", narration: "-----", type: "-----" },
+  { date: "9/03/2019", amount: "-----", narration: "-----", type: "-----" },
+  { date: "11/03/2019", amount: "-----", narration: "-----", type: "-----" },
+  { date: "1/03/2020", amount: "-----", narration: "-----", type: "-----" },
+  { date: "3/03/2020", amount: "-----", narration: "-----", type: "-----" },
+  { date: "5/03/2020", amount: "-----", narration: "-----", type: "-----" },
+  { date: "7/03/2020", amount: "-----", narration: "-----", type: "-----" },
+  { date: "9/03/2020", amount: "-----", narration: "-----", type: "-----" },
+  { date: "11/03/2020", amount: "-----", narration: "-----", type: "-----" },
+];

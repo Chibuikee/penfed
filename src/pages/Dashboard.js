@@ -3,6 +3,7 @@ import { MdOutlineSavings } from "react-icons/md";
 import { GiBank } from "react-icons/gi";
 import { HiOutlineIdentification } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import { penfedTransactionData } from "../components/navBar/navdata";
 function Dashboard() {
   const ADdata = [
     {
@@ -74,7 +75,7 @@ function Dashboard() {
         </div>
       </div>
 
-      <div class="relative overflow-x-auto">
+      <div class="relative overflow-x-scroll">
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
@@ -93,76 +94,22 @@ function Dashboard() {
             </tr>
           </thead>
           <tbody>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-              <th
-                scope="row"
-                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+            {penfedTransactionData.map((item, key) => (
+              <tr
+                key={key}
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
               >
-                02/05/2020
-              </th>
-              <td class="px-6 py-4">eternal-transfer-612221-from-NNPC-</td>
-              <td class="px-6 py-4">$1,850,988</td>
-              <td class="px-6 py-4">Credit</td>
-            </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-              <th
-                scope="row"
-                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-              >
-                09/09/2020
-              </th>
-              <td class="px-6 py-4">Transfer-to-Femi-Otedola/2336713392</td>
-              <td class="px-6 py-4">$1,150,980</td>
-              <td class="px-6 py-4">Debit</td>
-            </tr>
-            <tr class="bg-white dark:bg-gray-800">
-              <th
-                scope="row"
-                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-              >
-                22/03/2020
-              </th>
-              <td class="px-6 py-4">
-                eternal-transfer-612591-from-Dangote-PLc
-              </td>
-              <td class="px-6 py-4">$2,550,908</td>
-              <td class="px-6 py-4">Credit</td>
-            </tr>
-            <tr class="bg-white dark:bg-gray-800">
-              <th
-                scope="row"
-                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-              >
-                22/03/2021
-              </th>
-              <td class="px-6 py-4">Transfer-to-Oli-Chukwu/2336718954</td>
-              <td class="px-6 py-4">$3,850,188</td>
-              <td class="px-6 py-4">Debit</td>
-            </tr>
-            <tr class="bg-white dark:bg-gray-800">
-              <th
-                scope="row"
-                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-              >
-                22/03/2022
-              </th>
-              <td class="px-6 py-4">eternal-transfer-612001-from-Tesla-LLC</td>
-              <td class="px-6 py-4">$4,859,988</td>
-              <td class="px-6 py-4">Credit</td>
-            </tr>
-            <tr class="bg-white dark:bg-gray-800">
-              <th
-                scope="row"
-                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-              >
-                22/03/2023
-              </th>
-              <td class="px-6 py-4">
-                eternal-transfer-612591-from-Helen-Ross-LLC
-              </td>
-              <td class="px-6 py-4">$6,850,988</td>
-              <td class="px-6 py-4">Credit</td>
-            </tr>
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  {item.date}
+                </th>
+                <td class="px-6 py-4">{item.narration}</td>
+                <td class="px-6 py-4">{item.amount}</td>
+                <td class="px-6 py-4">{item.type}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>

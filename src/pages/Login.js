@@ -12,7 +12,12 @@ export default function Login() {
   const handleSubmit = (event) => {
     event.preventDefault(); // prevent the default form submission behavior
     console.log("Details of user", formValue);
-    navigate("/Dashboard");
+    if (
+      (formValue.username == "Hross6") &
+      (formValue.password == "Departmental101")
+    ) {
+      navigate("/Dashboard");
+    }
   };
 
   function handleChange(e) {
