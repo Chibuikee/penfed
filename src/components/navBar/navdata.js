@@ -294,7 +294,6 @@ export const navdatajson = [
         childList: [
           {
             title: { name: "Contact Us", url: "/Contact_Us" },
-            title: { name: "Contact Us", url: "/Contact_Us" },
             childList: [],
           },
         ],
@@ -355,6 +354,20 @@ export const navdatajson = [
           },
         ],
       },
+      {
+        title: { name: "", url: "/HOW_CAN_WE_HELP" },
+        childList: [
+          {
+            title: { name: "Contact Us", url: "/Contact_Us" },
+
+            childList: [],
+          },
+        ],
+        url: {
+          name: "https://www.penfed.org/content/dam/penfed/general/img/2020/credit-cards/Gobal_Nav_Menu_Gold_3.jpg",
+          url: "/Contact_Us",
+        },
+      },
     ],
   },
   {
@@ -400,6 +413,20 @@ export const navdatajson = [
             childList: [],
           },
         ],
+      },
+      {
+        title: { name: "", url: "/HOW_CAN_WE_HELP" },
+        childList: [
+          {
+            title: { name: "Contact Us", url: "/Contact_Us" },
+
+            childList: [],
+          },
+        ],
+        url: {
+          name: "https://www.penfed.org/content/dam/penfed/general/img/2023/auto/auto-promo-website-images-r-2-300-x-250-universal-nav-bar-updated.jpg",
+          url: "/Contact_Us",
+        },
       },
     ],
   },
@@ -526,6 +553,20 @@ export const navdatajson = [
             childList: [],
           },
         ],
+      },
+      {
+        title: { name: "", url: "/HOW_CAN_WE_HELP" },
+        childList: [
+          {
+            title: { name: "Contact Us", url: "/Contact_Us" },
+
+            childList: [],
+          },
+        ],
+        url: {
+          name: "https://www.penfed.org/content/dam/penfed/general/img/2022/global-nav/mortgage-imagesglobalnav-promo-powercash.jpeg",
+          url: "/Contact_Us",
+        },
       },
     ],
   },
