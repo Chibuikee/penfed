@@ -72,34 +72,99 @@ function Dashboard() {
             <span className="text-xs">1,850,988</span>
           </h2>
         </div>
-        <div className="bg-[#f0f9ff]">
-          <div className="grid xxs:grid-cols-2 pc:grid-cols-3">
-            <div className=" border-[0.3px] border-solid border-[#464545] pb-5 px-5">
-              <h2 className="font-bold mr-2 py-4 px-2">Transaction history</h2>
-              <div className=" w-full h-[0.5px] mb-2 bg-[black]"></div>
-              <div className="ml-3">
-                Jan 2018<span>-</span>Dec 2020
-              </div>
-            </div>
-            <div className=" border-[0.3px] border-solid border-[#464545] pb-5 px-5">
-              <h2 className="font-bold mr-2 py-4 px-2">Amount</h2>
-              <div className=" w-full h-[0.5px] mb-2 bg-[black]"></div>
-              <h3 className="text-xs">
-                <span className="text-xs ml-3">1,850,988</span>
-              </h3>
-            </div>
-            <div className=" border-[0.3px] border-solid border-[#464545] pb-5 px-5">
-              <h2 className="font-bold mr-2 py-4 px-2">
+      </div>
+
+      <div class="relative overflow-x-auto">
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+          <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+              <th scope="col" class="px-6 py-3">
+                Date
+              </th>
+              <th scope="col" class="px-6 py-3">
                 Narration
-                <span> Jan 2018</span>-<span>Dec 2020</span>
-              </h2>
-              <div className=" w-full h-[0.5px] mb-2 bg-[black]"></div>
-              <h3 className="text-xs ml-2">
+              </th>
+              <th scope="col" class="px-6 py-3">
+                Amount
+              </th>
+              <th scope="col" class="px-6 py-3">
+                type
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                02/05/2020
+              </th>
+              <td class="px-6 py-4">eternal-transfer-612221-from-NNPC-</td>
+              <td class="px-6 py-4">$1,850,988</td>
+              <td class="px-6 py-4">Credit</td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                09/09/2020
+              </th>
+              <td class="px-6 py-4">Transfer-to-Femi-Otedola/2336713392</td>
+              <td class="px-6 py-4">$1,150,980</td>
+              <td class="px-6 py-4">Debit</td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                22/03/2020
+              </th>
+              <td class="px-6 py-4">
+                eternal-transfer-612591-from-Dangote-PLc
+              </td>
+              <td class="px-6 py-4">$2,550,908</td>
+              <td class="px-6 py-4">Credit</td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                22/03/2021
+              </th>
+              <td class="px-6 py-4">Transfer-to-Oli-Chukwu/2336718954</td>
+              <td class="px-6 py-4">$3,850,188</td>
+              <td class="px-6 py-4">Debit</td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                22/03/2022
+              </th>
+              <td class="px-6 py-4">eternal-transfer-612001-from-Tesla-LLC</td>
+              <td class="px-6 py-4">$4,859,988</td>
+              <td class="px-6 py-4">Credit</td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                22/03/2023
+              </th>
+              <td class="px-6 py-4">
                 eternal-transfer-612591-from-Helen-Ross-LLC
-              </h3>
-            </div>
-          </div>
-        </div>
+              </td>
+              <td class="px-6 py-4">$6,850,988</td>
+              <td class="px-6 py-4">Credit</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
   );
