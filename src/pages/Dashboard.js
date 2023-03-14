@@ -58,35 +58,53 @@ function Dashboard() {
         <div
           className={`px-[5px]  s:px-[30px] ${
             display ? "hidden" : "block"
-          } py-[20px] bg-[#EEF1F8] relative w-[100%]  ml-[50%] transform translate-x-[-50%] flex justify-between `}
+          } py-[20px] bg-[#EEF1F8] relative w-[100%] `}
         >
-          <div>
-            <h2 className="font-semibold text-[14px] text-[#292B2F]">
-              Money Market Savings
-            </h2>
-            <p className="text-[#555C68]">***8921</p>
+          <div className="flex justify-between pb-[20px]">
+            <div>
+              <h2 className="font-semibold text-[14px] text-[#292B2F]">
+                Money Market Savings
+              </h2>
+              <p className="text-[#555C68]">***8921</p>
+            </div>
+            <div>
+              <h2 className="font-semibold text-[14px] text-[#292B2F]">
+                $1,850,988
+              </h2>
+              <p className="text-[#555C68]">Available balance</p>
+            </div>
+            <img
+              className="absolute top-[30px] cursor-pointer md:right-[30px] right-[2px]"
+              src="/down.svg"
+              alt="img"
+              onClick={() => setDisplay(true)}
+            />
           </div>
-          <div>
-            <h2 className="font-semibold text-[14px] text-[#292B2F]">
-              $1,850,988
+          <div className="flex justify-between font-semibold text-[14px] text-[#292B2F]">
+            <h2 className="font-semibold text-[14px] pb-[20px] text-[#292B2F]">
+              Total Access Checkings
             </h2>
-            <p className="text-[#555C68]">Available balance</p>
+            <p>$0</p>
           </div>
-          <img
-            className="absolute top-[30px] cursor-pointer md:right-[30px] right-[2px]"
-            src="/down.svg"
-            alt="img"
-            onClick={() => setDisplay(true)}
-          />
+          <div className="flex justify-between pb-[20px] font-semibold text-[14px] text-[#292B2F]">
+            <h2 className="">Complete Access Checkings</h2>
+            <p>$0</p>
+          </div>
         </div>
         <div
           className={`${
             display ? "block" : "hidden"
-          }  grid p-10 xxs:grid-cols-2 md:grid-cols-3`}
+          }  grid p-10 xxs:grid-cols-2 md:grid-cols-3 relative`}
         >
+          <img
+            className="absolute top-[70px] cursor-pointer  md:right-[30px] right-[10px]"
+            onClick={() => setDisplay(false)}
+            src="/up.svg"
+            alt="img"
+          />
           <h2 className="mb-5">
             <span className="font-bold mr-2">Full Name:</span>
-            <span className="text-[20px]">Bexley Ross</span>
+            <span className="text-[20px]">Helen Ross LLC</span>
           </h2>
           <h2 className="mb-5">
             <span className="font-bold mr-2">Address:</span>
@@ -106,12 +124,6 @@ function Dashboard() {
       </div>
 
       <div class={`${display ? "block" : "hidden"} relative overflow-x-scroll`}>
-        <img
-          className="absolute top-[10px] cursor-pointer  md:right-[30px] right-[0px]"
-          onClick={() => setDisplay(false)}
-          src="/up.svg"
-          alt="img"
-        />
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
