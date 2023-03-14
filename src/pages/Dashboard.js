@@ -4,7 +4,10 @@ import { GiBank } from "react-icons/gi";
 import { HiOutlineIdentification } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { penfedTransactionData } from "../components/navBar/navdata";
+import { useState } from "react";
+import styles from "./styles.module.css";
 function Dashboard() {
+  const [display, setDisplay] = useState(false);
   const ADdata = [
     {
       name: GoCreditCard,
@@ -30,7 +33,7 @@ function Dashboard() {
   ];
 
   return (
-    <section className="pb-10 ">
+    <section className={["pb-10", styles.Hide].join(" ")}>
       <div className="p-[27px] flex justify-between mr-2">
         <Link to="/">
           <img
@@ -52,11 +55,38 @@ function Dashboard() {
             </h1>
           </Link>
         </div>
-
-        <div className="grid p-10 xxs:grid-cols-2 md:grid-cols-3">
+        <div
+          className={`px-[5px]  s:px-[30px] ${
+            display ? "hidden" : "block"
+          } py-[20px] bg-[#EEF1F8] relative w-[100%]  ml-[50%] transform translate-x-[-50%] flex justify-between `}
+        >
+          <div>
+            <h2 className="font-semibold text-[20px] text-[#292B2F]">
+              Money Market Savings
+            </h2>
+            <p className="text-[#555C68]">***8921</p>
+          </div>
+          <div>
+            <h2 className="font-semibold text-[20px] text-[#292B2F]">
+              $1,850,988
+            </h2>
+            <p className="text-[#555C68]">Available balance</p>
+          </div>
+          <img
+            className="absolute top-[30px] cursor-pointer md:right-[30px] right-[0px]"
+            src="/down.svg"
+            alt="img"
+            onClick={() => setDisplay(true)}
+          />
+        </div>
+        <div
+          className={`${
+            display ? "block" : "hidden"
+          }  grid p-10 xxs:grid-cols-2 md:grid-cols-3`}
+        >
           <h2 className="mb-5">
             <span className="font-bold mr-2">Full Name:</span>
-            <span className="text-xs">Bexley Ross</span>
+            <span className="text-[20px]">Bexley Ross</span>
           </h2>
           <h2 className="mb-5">
             <span className="font-bold mr-2">Address:</span>
@@ -66,16 +96,22 @@ function Dashboard() {
           </h2>
           <h2 className="mb-5">
             <span className="font-bold mr-2">Account no:</span>
-            <span className="text-xs">***8921</span>
+            <span className="text-[20px]">***8921</span>
           </h2>
           <h2 className="mb-5">
             <span className="font-bold mr-2">Acc Balance:</span>
-            <span className="text-xs">1,850,988</span>
+            <span className="text-[20px] text-medium">1,850,988</span>
           </h2>
         </div>
       </div>
 
-      <div class="relative overflow-x-scroll">
+      <div class={`${display ? "block" : "hidden"} relative overflow-x-scroll`}>
+        <img
+          className="absolute top-[10px] cursor-pointer right-[30px]"
+          onClick={() => setDisplay(false)}
+          src="/up.svg"
+          alt="img"
+        />
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
