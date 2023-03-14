@@ -61,19 +61,19 @@ function Dashboard() {
           } py-[20px] bg-[#EEF1F8] relative w-[100%]  ml-[50%] transform translate-x-[-50%] flex justify-between `}
         >
           <div>
-            <h2 className="font-semibold text-[20px] text-[#292B2F]">
+            <h2 className="font-semibold text-[14px] text-[#292B2F]">
               Money Market Savings
             </h2>
             <p className="text-[#555C68]">***8921</p>
           </div>
           <div>
-            <h2 className="font-semibold text-[20px] text-[#292B2F]">
+            <h2 className="font-semibold text-[14px] text-[#292B2F]">
               $1,850,988
             </h2>
             <p className="text-[#555C68]">Available balance</p>
           </div>
           <img
-            className="absolute top-[30px] cursor-pointer md:right-[30px] right-[0px]"
+            className="absolute top-[30px] cursor-pointer md:right-[30px] right-[2px]"
             src="/down.svg"
             alt="img"
             onClick={() => setDisplay(true)}
@@ -107,7 +107,7 @@ function Dashboard() {
 
       <div class={`${display ? "block" : "hidden"} relative overflow-x-scroll`}>
         <img
-          className="absolute top-[10px] cursor-pointer right-[30px]"
+          className="absolute top-[10px] cursor-pointer  md:right-[30px] right-[0px]"
           onClick={() => setDisplay(false)}
           src="/up.svg"
           alt="img"
