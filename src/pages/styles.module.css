@@ -1,7 +1,23 @@
 .Hide::-webkit-scrollbar {
   display: none;
 }
-.border{
+.border {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+}
+.Seperate {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .Seperate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.Border {
+  border-bottom: 1px solid #ccc;
+  transform: translateY(-50%);
+  width: 50%;
 }
