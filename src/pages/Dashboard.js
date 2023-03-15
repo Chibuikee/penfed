@@ -31,7 +31,7 @@ function Dashboard() {
       url: "#",
     },
   ];
-
+  
   return (
     <section className={["pb-10", styles.Hide].join(" ")}>
       <div className="p-[27px] flex justify-between mr-2">
@@ -51,7 +51,7 @@ function Dashboard() {
         <div className="relative saturate-[0] bg-[url('https://www.penfed.org/content/dam/penfed/general/img/2023/homepage/deposits-homepage-tiles-16-533x756.jpeg')_] bg-center bg-cover w-[100%] h-[120px]">
           <Link to="/">
             <h1 className="absolute top-5 text-xl mmd:text-3xl font-semibold text-white px-[28px]">
-              DASHBOARD
+              ACCOUNTS
             </h1>
           </Link>
         </div>
@@ -65,7 +65,7 @@ function Dashboard() {
               <h2 className="font-semibold text-[14px] text-[#292B2F]">
                 Money Market Savings
               </h2>
-              <p className="text-[#555C68]">***8921</p>
+              <p className="text-[#555C68] text-[12px]">***8921</p>
             </div>
             <div>
               <h2 className="font-semibold text-[14px] text-[#292B2F]">
@@ -86,9 +86,13 @@ function Dashboard() {
               "flex justify-between py-[20px]  text-[14px] ",
             ].join(" ")}
           >
-            <h2 className="font-semibold text-[#292B2F]">
-              Total Access Checkings
-            </h2>
+            <div>
+              <h2 className="font-semibold text-[#292B2F]">
+                Total Access Checkings
+              </h2>
+              <p className="text-[#555C68] text-[12px]">***2421</p>
+            </div>
+
             <div>
               <p className="font-semibold text-[#292B2F]">$0.00</p>
               <p className="text-[#555C68]">Available balance</p>
@@ -99,9 +103,13 @@ function Dashboard() {
               "flex justify-between pb-[20px] py-[20px] text-[14px] ",
             ].join(" ")}
           >
-            <h2 className="font-semibold text-[14px]  text-[#292B2F]">
-              Complete Access Checkings
-            </h2>
+            <div>
+              <h2 className="font-semibold text-[14px]  text-[#292B2F]">
+                Complete Access Checkings
+              </h2>
+              <p className="text-[#555C68] text-[12px]">***4660</p>
+            </div>
+
             <div>
               <p className="font-semibold text-[#292B2F]">$0.00</p>
               <p className="text-[#555C68]">Available balance</p>
