@@ -14,10 +14,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #eee;
   }
 }
+.Wrap{
+  white-space: nowrap;
+}
 .Border {
-  border-bottom: 1px solid #ccc;
-  transform: translateY(-50%);
-  width: 50%;
+ 
 }

@@ -56,7 +56,7 @@ function Dashboard() {
           </Link>
         </div>
         <div
-          className={`px-[5px]  s:px-[30px] ${
+          className={`px-[15px]  s:px-[30px] ${
             display ? "hidden" : "block"
           } bg-[#EEF1F8] relative w-[100%] `}
         >
@@ -119,7 +119,7 @@ function Dashboard() {
         <div
           className={`${
             display ? "block" : "hidden"
-          }  grid py-10 px-[6px] xxs:grid-cols-2 md:grid-cols-3 relative`}
+          }  grid py-10 px-[15px] xxs:grid-cols-2 md:grid-cols-3 relative`}
         >
           <img
             className="absolute top-[20px] md:top-[70px] cursor-pointer  md:right-[30px] right-[10px]"
@@ -128,9 +128,19 @@ function Dashboard() {
             alt="img"
           />
           <h2 className={[styles.Seperate, "text-[14px] mb-5"].join(" ")}>
-            <span className="font-medium mr-2 w-[25%]">Full Name</span>
+            <span
+              className={["font-medium mr-2 w-[25%]", styles.Wrap].join(" ")}
+            >
+              Full Name
+            </span>
             <span className={styles.Border}></span>
-            <span className="w-[25%] font-bold text-right">Helen Ross LLC</span>
+            <span
+              className={["w-[30%] font-bold text-right", styles.Wrap].join(
+                " "
+              )}
+            >
+              Helen Ross LLC
+            </span>
           </h2>
           {/* <h2 className="mb-5">
             <span className="font-bold mr-2">Address:</span>
@@ -139,14 +149,24 @@ function Dashboard() {
             </span>
           </h2> */}
           <h2 className={[styles.Seperate, "text-[14px] mb-5"].join(" ")}>
-            <span className="font-medium mr-2 w-[25%]">Account no</span>
+            <span
+              className={["font-medium mr-2 w-[25%]", styles.Wrap].join(" ")}
+            >
+              Account no
+            </span>
             <span className={styles.Border}></span>
             <span className="w-[25%] font-bold text-right">456718921</span>
           </h2>
           <h2 className={[styles.Seperate, "text-[14px] mb-5"].join(" ")}>
-            <span className="font-medium mr-2 w-[25%]">Avaliable Balance</span>
+            <span
+              className={["font-medium mr-2 w-[25%]", styles.Wrap].join(" ")}
+            >
+              Avaliable Balance
+            </span>
             <span className={styles.Border}></span>
-            <span className="w-[25%] font-bold text-right text-[#16a34a]">$1,850,988</span>
+            <span className="w-[30%] font-bold text-right text-[#16a34a]">
+              $1,850,988
+            </span>
           </h2>
         </div>
       </div>
