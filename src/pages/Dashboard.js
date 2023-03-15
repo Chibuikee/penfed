@@ -31,7 +31,7 @@ function Dashboard() {
       url: "#",
     },
   ];
-  
+
   return (
     <section className={["pb-10", styles.Hide].join(" ")}>
       <div className="p-[27px] flex justify-between mr-2">
@@ -63,7 +63,7 @@ function Dashboard() {
           <div className="flex justify-between  py-[20px]">
             <div>
               <h2 className="font-semibold text-[14px] text-[#292B2F]">
-                Money Market Savings
+                Investment Savings
               </h2>
               <p className="text-[#555C68] text-[12px]">***8921</p>
             </div>
@@ -119,36 +119,42 @@ function Dashboard() {
         <div
           className={`${
             display ? "block" : "hidden"
-          }  grid p-10 xxs:grid-cols-2 md:grid-cols-3 relative`}
+          }  grid py-10 px-[6px] xxs:grid-cols-2 md:grid-cols-3 relative`}
         >
           <img
-            className="absolute top-[70px] cursor-pointer  md:right-[30px] right-[10px]"
+            className="absolute top-[20px] md:top-[70px] cursor-pointer  md:right-[30px] right-[10px]"
             onClick={() => setDisplay(false)}
             src="/up.svg"
             alt="img"
           />
-          <h2 className="mb-5">
-            <span className="font-bold mr-2">Full Name:</span>
-            <span className="">Helen Ross LLC</span>
+          <h2 className={[styles.Seperate, "text-[14px] mb-5"].join(" ")}>
+            <span className="font-medium mr-2 w-[25%]">Full Name</span>
+            <span className={styles.Border}></span>
+            <span className="w-[25%] font-bold text-right">Helen Ross LLC</span>
           </h2>
-          <h2 className="mb-5">
+          {/* <h2 className="mb-5">
             <span className="font-bold mr-2">Address:</span>
             <span className="">
               217105 105th Avenue SE, Kent, WA 98030 Ross
             </span>
+          </h2> */}
+          <h2 className={[styles.Seperate, "text-[14px] mb-5"].join(" ")}>
+            <span className="font-medium mr-2 w-[25%]">Account no</span>
+            <span className={styles.Border}></span>
+            <span className="w-[25%] font-bold text-right">456718921</span>
           </h2>
-          <h2 className="mb-5">
-            <span className="font-bold mr-2">Account no:</span>
-            <span className="">***8921</span>
-          </h2>
-          <h2 className="mb-5">
-            <span className="font-bold mr-2">Acc Balance:</span>
-            <span className="">$1,850,988</span>
+          <h2 className={[styles.Seperate, "text-[14px] mb-5"].join(" ")}>
+            <span className="font-medium mr-2 w-[25%]">Avaliable Balance</span>
+            <span className={styles.Border}></span>
+            <span className="w-[25%] font-bold text-right text-[#16a34a]">$1,850,988</span>
           </h2>
         </div>
       </div>
 
       <div class={`${display ? "block" : "hidden"} relative overflow-x-scroll`}>
+        <h1 className="font-semibold text-[20px] p-[10px]  text-[#292B2F]">
+          Transaction History
+        </h1>
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
