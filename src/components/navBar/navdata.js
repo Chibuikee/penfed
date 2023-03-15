@@ -880,4 +880,4 @@ export const penfedTransactionData = [
     narration: "Eternal-Transfer-612778-From-Helen-Ross-LLC",
     type: "Credit",
   },
-];
+].reverse();
