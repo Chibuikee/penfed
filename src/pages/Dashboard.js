@@ -155,7 +155,7 @@ function Dashboard() {
               Account no
             </span>
             <span className={styles.Border}></span>
-            <span className="w-[25%] font-bold text-right">456718921</span>
+            <span className="w-[25%] font-bold text-right">******8921</span>
           </h2>
           <h2 className={[styles.Seperate, "text-[14px] mb-5"].join(" ")}>
             <span
