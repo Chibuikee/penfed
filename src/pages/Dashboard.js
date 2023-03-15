@@ -58,9 +58,9 @@ function Dashboard() {
         <div
           className={`px-[5px]  s:px-[30px] ${
             display ? "hidden" : "block"
-          } py-[20px] bg-[#EEF1F8] relative w-[100%] `}
+          } bg-[#EEF1F8] relative w-[100%] `}
         >
-          <div className="flex justify-between pb-[20px]">
+          <div className="flex justify-between  py-[20px]">
             <div>
               <h2 className="font-semibold text-[14px] text-[#292B2F]">
                 Money Market Savings
@@ -71,7 +71,7 @@ function Dashboard() {
               <h2 className="font-semibold text-[14px] text-[#292B2F]">
                 $1,850,988
               </h2>
-              <p className="text-[#555C68]">Available balance</p>
+              <p className="text-[#555C68] text-[14px]">Available balance</p>
             </div>
             <img
               className="absolute top-[30px] cursor-pointer md:right-[30px] right-[2px]"
@@ -80,15 +80,32 @@ function Dashboard() {
               onClick={() => setDisplay(true)}
             />
           </div>
-          <div className="flex justify-between font-semibold text-[14px] text-[#292B2F]">
-            <h2 className="font-semibold text-[14px] pb-[20px] text-[#292B2F]">
+          <div
+            className={[
+              styles.border,
+              "flex justify-between py-[20px]  text-[14px] ",
+            ].join(" ")}
+          >
+            <h2 className="font-semibold text-[#292B2F]">
               Total Access Checkings
             </h2>
-            <p>$0</p>
+            <div>
+              <p className="font-semibold text-[#292B2F]">$0.00</p>
+              <p className="text-[#555C68]">Available balance</p>
+            </div>
           </div>
-          <div className="flex justify-between pb-[20px] font-semibold text-[14px] text-[#292B2F]">
-            <h2 className="">Complete Access Checkings</h2>
-            <p>$0</p>
+          <div
+            className={[
+              "flex justify-between pb-[20px] py-[20px] text-[14px] ",
+            ].join(" ")}
+          >
+            <h2 className="font-semibold text-[14px]  text-[#292B2F]">
+              Complete Access Checkings
+            </h2>
+            <div>
+              <p className="font-semibold text-[#292B2F]">$0.00</p>
+              <p className="text-[#555C68]">Available balance</p>
+            </div>
           </div>
         </div>
         <div
@@ -104,21 +121,21 @@ function Dashboard() {
           />
           <h2 className="mb-5">
             <span className="font-bold mr-2">Full Name:</span>
-            <span className="text-[20px]">Helen Ross LLC</span>
+            <span className="">Helen Ross LLC</span>
           </h2>
           <h2 className="mb-5">
             <span className="font-bold mr-2">Address:</span>
-            <span className="text-xs">
+            <span className="">
               217105 105th Avenue SE, Kent, WA 98030 Ross
             </span>
           </h2>
           <h2 className="mb-5">
             <span className="font-bold mr-2">Account no:</span>
-            <span className="text-[20px]">***8921</span>
+            <span className="">***8921</span>
           </h2>
           <h2 className="mb-5">
             <span className="font-bold mr-2">Acc Balance:</span>
-            <span className="text-[20px] text-medium">1,850,988</span>
+            <span className="">$1,850,988</span>
           </h2>
         </div>
       </div>
