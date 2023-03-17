@@ -11,13 +11,13 @@ function App() {
     <div className="App">
       <header className="App-header"></header>
       <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/Dashboard" element={<Dashboard />} />
-          <Route path="/Navtest" element={<Navtest />} />
-          {/* <Route path="Details/:productId" element={<DetailsPage />} /> */}
-        </Routes>
+//         <Routes>
+//           <Route path="/" element={<Home />} />
+//           <Route path="/Login" element={<Login />} />
+//           <Route path="/Dashboard" element={<Dashboard />} />
+//           <Route path="/Navtest" element={<Navtest />} />
+//           {/* <Route path="Details/:productId" element={<DetailsPage />} /> */}
+//         </Routes>
       </main>
     </div>
   );
